@@ -348,6 +348,18 @@ Answer the following questions:
 
 Please make sure that you are set up on your personal Azure accounts prior to the first day of the Cloud Security unit. Use the following set up guide for assistance: [Set-up Guide](https://docs.google.com/document/d/1gs_09b7eotl7hzTL82xlqPt-OwOd0aWA78qcQxtMr6Y/edit).
 
-___
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+---
+
+## Week 11 Homework Solution: Network Security
+
+Refer to the following solution files for the homework worksheets: 
+
+* [Week 11 Homework Solution: Network Security](https://github.com/karma-786/Week-11-Homework-Network-Security/blob/main/Unit%2011%20Submission%20File_%20Network%20Security%20Homework.md)  
+
+---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
