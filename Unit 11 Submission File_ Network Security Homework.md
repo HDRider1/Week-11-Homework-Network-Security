@@ -79,15 +79,15 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
 1. Break down the Sort Rule header and explain what is happening.
 
-   Answer: **_`The remote host, through http ports, attempted to deliver a malicious payload to any port of the local machine.`_**  
+   Answer: **_`The remote host, through http ports, attempted to deliver a malicious payload to any port of the local machine. (PORT 80)`_**  
 
 2. What layer of the Defense in Depth model does this alert violate?
 
-   Answer: **_`Delivery (Sending the weaponized bundle to the victim-for example, a malicious link in a legitimate-looking email.)`_**  
+   Answer: **_`Delivery (Sending the weaponized bundle to the victim-for example, a malicious link in a legitimate-looking email.) (Policies, Procedures, and Awareness)`_**  
 
 3. What kind of attack is indicated?
 
-   Answer: **_`Cross site scripting`_**  
+   Answer: **_`Cross site scripting (Emerging Threat for Policy Violation "EXE or DLL Windows file download")`_**  
 
 Snort Rule #3
 
@@ -316,9 +316,9 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Name and define two ways an IDS connects to a network.
 
-   Answer 1: **_`Network-based Intrusion Detection System (NIDS) → Monitors traffic at network level from all devices going in and out. It performs analysis on the traffic looking for patterns and abnormal behaviors upon which a warning is sent.`_**  
+   Answer 1: **_`Network-based Intrusion Detection System (NIDS) → Monitors traffic at network level from all devices going in and out. It performs analysis on the traffic looking for patterns and abnormal behaviors upon which a warning is sent. (Network TAP (Test Access Port): A hardware device that provides access to a network. Network TAPs transmit both send and receive data streams on separate dedicated channels simultaneously, guaranteeing that all data arrives at the monitoring device in real time.)`_**  
 
-   Answer 2: **_`Host-based Intrusion Detection System (HIDS) → Monitors the entire network for system data and looks for malicious activity on an individual host. It can take snapshots, and if they change over time maliciously, an alert is raised. It also analyzes the changes management in the operating system logs, files, as well as the software and much more.`_**  
+   Answer 2: **_`Host-based Intrusion Detection System (HIDS) → Monitors the entire network for system data and looks for malicious activity on an individual host. It can take snapshots, and if they change over time maliciously, an alert is raised. It also analyzes the changes management in the operating system logs, files, as well as the software and much more. ((SPAN/Mirrored Port) SPAN Port (Switched Port Analyzer) also known as Port Mirroring sends a mirror image of all network data to another physical port, where the packets can be captured and analyzed.)`_**  
 
 2. Describe how an IPS connects to a network.
 
@@ -448,10 +448,10 @@ Answer the following:
 | **Exploitation** |  What does the exploit do?| **_`Install malware (a downloader) and download additional malware from the Internet, allowing attacker command execution.`_**  |
 | **Installation** | How is the exploit installed?| **_`Possible malwares include ransomware and remote-access Trojans and other unwanted applications.`_**  |
 | **Command & Control (C2)** | How does the attacker gain control of the remote machine?| **_`Made to look like benign traffic via falsified HTTP headers`_**  |
-| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?| **_`The attacker's final goal could be anything from extracting a ransom from you in exchange for decrypting your files to exfiltrating customer information out of the network.`_**  |
+| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?| **_`The attacker's final goal could be anything from extracting a ransom from you in exchange for decrypting your files to exfiltrating customer information out of the network.`_**  |  
 
 
-    Answer: **_`The attacker has sent a TROJAN malware via the HTTP port to gain access to the system, and install files to decrypt all the data and lock the system from providing any other access. Attackers can collect ransom to release the data and other files from the network.`_**  
+   Answer: **_`The attacker has sent a TROJAN malware via the HTTP port to gain access to the system, and install files to decrypt all the data and lock the system from providing any other access. Attackers can collect ransom to release the data and other files from the network.`_**  
 
 
 4. What are your recommended mitigation strategies?
@@ -467,10 +467,21 @@ Answer the following:
 
 5. List your third-party references.
 
-    Answer: **_``_**  
-
-
+    Answer: [IOA vs. IOC](https://www.crowdstrike.com/cybersecurity-101/indicators-of-compromise/ioa-vs-ioc/)
+    [Port 5800](https://www.speedguide.net/port.php?port=5800)
+    
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
+---
+  
+## :sunglasses: `Ketan Vithal Patel` :sunglasses:  
+
+### `Thursday June 10, 2021 -- UofT Cybersecurity - Boot Camp`
+#### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
+```
+હરે કૃષ્ણ હરે કૃષ્ણ, કૃષ્ણ કૃષ્ણ હરે હરે |  Hare Krishna Hare Krishna, Krishna Krishna Hare Hare |
+હરે રામ હરે રામ, રામ રામ હરે હરે ||   Hare Ram Hare Ram, Ram Ram Hare Hare ||
+```
+---  
