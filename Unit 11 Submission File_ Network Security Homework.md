@@ -467,7 +467,7 @@ Answer the following:
 
 5. List your third-party references.
 
-    Answer: [IOA vs. IOC](https://www.crowdstrike.com/cybersecurity-101/indicators-of-compromise/ioa-vs-ioc/)
+    Answer: [IOA vs. IOC](https://www.crowdstrike.com/cybersecurity-101/indicators-of-compromise/ioa-vs-ioc/)  
     [Port 5800](https://www.speedguide.net/port.php?port=5800)
     
 ---
